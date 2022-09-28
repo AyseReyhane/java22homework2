@@ -1,0 +1,36 @@
+package classesWithAttributes;
+
+public class Product {
+	//attribute \ field
+	private int _id;
+	private String _name;
+	private String _description;
+	private double _price;
+	private int _stockAmount;
+	private String _renk;
+	private String _kod;
+	
+	//getter
+	public int getId() {
+		return _id;
+	}
+	//setter
+	public void setId(int id) {
+		this._id = id;
+		// this class ı temsil eder, yani bulunduğu class ı
+		// _id field
+	}
+	
+	// ürün nesnesinde ürüne ait özellikler.
+	
+	//  Encapsulation is one of the four fundamental OOP concepts. The other 
+	//three are inheritance, polymorphism, and abstraction.
+    //  Encapsulation in Java is a mechanism of wrapping the data (variables) 
+	//and code acting on the data (methods) together as a single unit. In encapsulation, 
+	//the variables of a class will be hidden from other classes, and can be accessed 
+	//only through the methods of their current class. 
+	//Therefore, it is also known as data hiding.
+    //  To achieve encapsulation in Java −
+    //Declare the variables of a class as private.
+    //Provide public setter and getter methods to modify and view the variables values.
+}

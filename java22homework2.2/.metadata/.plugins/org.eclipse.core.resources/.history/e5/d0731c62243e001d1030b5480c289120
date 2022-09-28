@@ -1,0 +1,24 @@
+package classes;
+
+public class Main {
+
+	public static void main(String[] args) {
+		CustomerManager customerManager = new CustomerManager();
+		CustomerManager customerManager2 = new CustomerManager();
+		customerManager = customerManager2;
+		customerManager.Add();
+		customerManager.Remove();
+		customerManager.Update();
+		
+        // Stack = Heap
+		// satck te sample var , heap te nesne
+		// Yukarıda elimde iki aynı tipte nesne vardı, 
+		// bellekte ayrı ayrı tutuluyordu.
+		// Atama işlemini yaptıktan sonra (satır 8) bellekte
+		// boşluk oluştu bunu toplayana garbage collector(bellek yöneticisi) denir.
+		// cM nin referans numarasına cM2 ninki atanmış oldu
+		
+
+	}
+
+}

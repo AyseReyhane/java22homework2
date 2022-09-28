@@ -1,0 +1,38 @@
+package classesWithAttributes;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Product product = new Product();
+		product.setName("Laptop");
+		product.setId(1);
+		product.setDescription("Asus Laptop");
+		product.setPrice(5000);
+		product.setStockAmount(3);
+		
+		
+		ProductManager productManager = new ProductManager();
+		productManager.Add(product);
+		System.out.println(product.getKod());
+		
+		
+		
+		// Bir class içerisinde baka bir class ı kullanabiliriz
+		
+		// The Single Responsibility Principle (SRP)
+		// The idea behind the SRP is that every class, module, or 
+		//function in a program should have one responsibility/purpose 
+		//in a program. As a commonly used definition, 
+		//"every class should have only one reason to change".
+		
+		// The SOLID acronym, they are:
+        // -The Single Responsibility Principle
+        // -The Open-Closed Principle
+        // -The Liskov Substitution Principle
+        // -The Interface Segregation Principle
+        // -The Dependency Inversion Principle
+
+	}
+
+}
